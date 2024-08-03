@@ -1,0 +1,2 @@
+00:03:15.473 [ApplicationImpl pooled thread 45] INFO  c.b.l.BrowserStackRunExtension - maven
+00:03:15.478 [ApplicationImpl pooled thread 45] INFO  com.browserstack.utils.Helpers - null
