@@ -2,6 +2,7 @@ package com.thetestingacademy.pojo;
 
 public class BookingResponse {
     private Integer bookingId;
+    private Booking booking;
 
     public Booking getBooking() {
         return booking;
@@ -19,6 +20,6 @@ public class BookingResponse {
         this.bookingId = bookingId;
     }
 
-    private Booking booking;
+
 
 }
