@@ -1,4 +1,4 @@
-package com.thetestingacademy.tests.crud;
+package com.thetestingacademy.tests.crud.postTC;
 
 import com.thetestingacademy.base.BaseTest;
 import com.thetestingacademy.endpoints.APIConstants;

@@ -12,11 +12,11 @@
             <testcase
                 name="testCreateBookingNegative"
                 time="1.638"
-                classname="com.thetestingacademy.tests.crud.testCreateBookingPost">
+                classname="com.thetestingacademy.tests.crud.postTC.testCreateBookingPost">
             </testcase>
             <testcase
                 name="testCreateBooking"
                 time="3.856"
-                classname="com.thetestingacademy.tests.crud.testCreateBookingPost">
+                classname="com.thetestingacademy.tests.crud.postTC.testCreateBookingPost">
             </testcase>
 </testsuite>

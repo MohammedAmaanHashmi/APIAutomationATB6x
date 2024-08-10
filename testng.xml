@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/Amaan/IdeaProjects/APIAutomationATB6x">
         <classes>
-            <class name="com.thetestingacademy.tests.crud.testCreateBookingPost">
+            <class name="com.thetestingacademy.tests.crud.postTC.testCreateBookingPost">
             </class>
         </classes>
     </test>
