@@ -1,7 +1,7 @@
 package com.thetestingacademy.pojo;
 
 public class BookingResponse {
-    private Integer bookingId;
+    private Integer bookingid;
     private Booking booking;
 
     public Booking getBooking() {
@@ -12,12 +12,12 @@ public class BookingResponse {
         this.booking = booking;
     }
 
-    public Integer getBookingId() {
-        return bookingId;
+    public Integer getbookingid() {
+        return bookingid;
     }
 
-    public void setBookingId(Integer bookingId) {
-        this.bookingId = bookingId;
+    public void setBookingid(Integer bookingid) {
+        this.bookingid = bookingid;
     }
 
 

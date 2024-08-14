@@ -2,9 +2,7 @@ package com.thetestingacademy.modules;
 
 import com.github.javafaker.Faker;
 import com.google.gson.Gson;
-import com.thetestingacademy.pojo.Booking;
-import com.thetestingacademy.pojo.BookingDates;
-import com.thetestingacademy.pojo.BookingResponse;
+import com.thetestingacademy.pojo.*;
 
 public class PayloadManager {
 
@@ -57,5 +55,28 @@ public class PayloadManager {
         return "{}";
     }
 
+    public String setAuthPayLoad() {
+        Auth auth = new Auth();
+        auth.setUsername("admin");
+        auth.setPassword("password123");
+        gson = new Gson();
+        String jsonPayloadString = gson.toJson(auth);
+        System.out.println(" payload set to " + jsonPayloadString);
+        return jsonPayloadString;
+    }
 
+    public String getTokenFromJson(String tokenResponse) {
+        gson = new Gson();
+        //Response(JSON) -> object TokenResponse
+        //Deserialization
+
+        TokenResponse tokenResponse1 = gson.fromJson(tokenResponse, TokenResponse.class);
+        return tokenResponse1.getToken();
+    }
+
+    public Booking getResponseFromJson(String getResponse) {
+        gson = new Gson();
+        Booking booking = gson.fromJson(getResponse, Booking.class);
+        return booking;
+    }
 }

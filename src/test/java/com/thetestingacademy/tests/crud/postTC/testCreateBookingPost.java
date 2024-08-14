@@ -1,7 +1,9 @@
 package com.thetestingacademy.tests.crud.postTC;
 
+import com.google.gson.Gson;
 import com.thetestingacademy.base.BaseTest;
 import com.thetestingacademy.endpoints.APIConstants;
+import com.thetestingacademy.pojo.Auth;
 import com.thetestingacademy.pojo.BookingResponse;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
@@ -13,6 +15,8 @@ import org.testng.annotations.Test;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class testCreateBookingPost extends BaseTest {
+
+    Gson gson;
 
     @Test
     @Owner("Amaan")
@@ -53,7 +57,16 @@ public class testCreateBookingPost extends BaseTest {
 
         validatableResponse = response.then().log().all();
         validatableResponse.statusCode(500);
+    }
 
 
+    public String setPayload() {
+        Auth auth = new Auth();
+        auth.setUsername("admin");
+        auth.setUsername("password123");
+        gson = new Gson();
+        String jsonPayloadString = gson.toJson(auth);
+        System.out.println("Payload set to " + gson.toJson(auth));
+        return gson.toJson(auth);
     }
 }
